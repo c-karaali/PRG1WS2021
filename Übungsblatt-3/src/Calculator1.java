@@ -13,11 +13,21 @@ public class Calculator1 {
         double result = Double.NaN;
 
         switch (op) {
-            case '+' -> result = n1 + n2;
-            case '-' -> result = n1 - n2;
-            case '*' -> result = n1 * n2;
-            case '/' -> result = n1 / n2;
-            default -> System.err.println("Syntax.Error");
+            case '+':
+                result = n1 + n2;
+                break;
+            case '-':
+                result = n1 - n2;
+                break;
+            case '*':
+                result = n1 * n2;
+                break;
+            case '/':
+                result = n1 / n2;
+                break;
+            default:
+                System.err.println("Syntax.Error");
+                break;
         }
 
         System.out.print("Ergebnis: " + n1 + " " + op + " " + n2 + " = " + result);
