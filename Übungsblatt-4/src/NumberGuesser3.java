@@ -16,15 +16,16 @@ public class NumberGuesser3 {
                 System.out.print("Die gesuchte Zahl ist kleiner. Bitte nochmal raten! ");
             }
 
-            if (numberOfGuesses >= 5) {
+            if (numberOfGuesses == 5) {
                 break;
             }
         } while (randomNumber != number);
 
-        if (randomNumber == number) {
+        if (randomNumber >= number) {
             System.out.print("Super! Sie haben die Zahl " + randomNumber + " in nur " + numberOfGuesses +
                     " Zügen erraten! ");
         } else {
+                System.out.println("");
                 System.out.print("Leider haben Sie es nicht geschafft, die Zahl " + randomNumber +
                                 " innerhalb von " + numberOfGuesses + " Zügen zu erraten ...");
         }
