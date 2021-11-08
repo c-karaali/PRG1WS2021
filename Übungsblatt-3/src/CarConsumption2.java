@@ -20,7 +20,7 @@ public class CarConsumption2 {
         if (route < 0 || route > 5000 ||
                 fuel < 1 || fuel > 31 ||
                 price < 1.20 || price > 2) {
-            System.err.print("Irgendwas stimmt leider nicht! ");
+            System.err.print("Irgendwas stimmt leider nicht! ... ");
         } else {
             System.out.println("Bei " + route + "km benötigt ihr Auto "
                     + (int)fuelConsumption + "l Kraftstoff und " + (int)oilConsumption + "l Öl.");
