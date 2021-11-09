@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import static java.lang.Math.*;
+import static java.lang.Math.random;
 
 public class NumberGuesser4 {
     public static void main(String[] args) {
@@ -31,12 +31,10 @@ public class NumberGuesser4 {
             System.out.println("Super! Sie haben die Zahl " + randomNumber + " in nur " + numberOfGuesses +
                     " Zügen erraten! ");
             System.out.print("Wollen Sie nochmal spielen? (j/n) ");
-            char playAgain = new Scanner(System.in).nextLine().charAt(0);
         } else {
             System.out.println("Leider haben Sie es nicht geschafft, die Zahl " + randomNumber +
                     " innerhalb von " + numberOfGuesses + " Zügen zu erraten ...");
             System.out.print("Wollen Sie nochmal spielen? (j/n) ");
-            char playAgain = char playAgain = new Scanner(System.in).nextLine().charAt(0);
         }
     }
 }
