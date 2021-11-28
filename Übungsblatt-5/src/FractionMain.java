@@ -1,17 +1,18 @@
 public class FractionMain {
     public static void main(String[] args) {
-        //Instancing using "new" operator
-        Fraction f1 = new Fraction();
-        Fraction f2 = new Fraction();
 
-        f1.numerator = f2.numerator = 4;
-        f1.denominator = f2.denominator = 3;
+        //Initializing 2 fractions using "new" method and assigning values
+        Fraction1 f1 = new Fraction1();
+        f1.num = 2;
+        f1.denom = 5;
+        Fraction1 f2 = new Fraction1();
+        f2.num = 3;
+        f2.denom = 8;
 
+
+        //Using the new add method created in Fraction
         f1.add(f2);
-
-        System.out.println("Result: "
-                + f1.numerator + " / "
-                + f1.denominator);
+        System.out.println("Result: " + f1.num + " / " + f1.denom);
 
     }
 }
