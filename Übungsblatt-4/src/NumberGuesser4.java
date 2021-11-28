@@ -3,10 +3,10 @@ import static java.lang.Math.random;
 
 public class NumberGuesser4 {
     public static void main(String[] args) {
-        int randomNumber = (int) (random() * 10) + 1;
+        int randomNumber = (int) (random() * 10);
         int number;
         int numberOfGuesses = 0;
-        char playAgain;
+        String jn;
 
         System.out.println("Willkommen zu Zahlenraten! ");
         System.out.print("An welche Zahl denke ich? ... ");
@@ -35,6 +35,9 @@ public class NumberGuesser4 {
             System.out.println("Leider haben Sie es nicht geschafft, die Zahl " + randomNumber +
                     " innerhalb von " + numberOfGuesses + " Zügen zu erraten ...");
             System.out.print("Wollen Sie nochmal spielen? (j/n) ");
+            if (jn.equalsIgnoreCase("ja")) {
+
+            }
         }
     }
 }
